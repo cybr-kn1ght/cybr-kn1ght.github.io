@@ -2,36 +2,49 @@
     width: clamp(100px, 80vw, 1200px);
     border-radius: 10px;
     font-family:
-            "JetBrains Mono",
-            "Consolas",
-            "Lucida Console",
-            "Menlo",
-            "Monaco",
-            "DejaVu Sans Mono",
-            "Ubuntu Mono",
-            "Courier New",
-            monospace;
+        "JetBrains Mono",
+        "Consolas",
+        "Lucida Console",
+        "Menlo",
+        "Monaco",
+        "DejaVu Sans Mono",
+        "Ubuntu Mono",
+        "Courier New",
+        monospace;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
     margin: 40px 0;
     overflow: hidden;
 }
 
-.gruvbox {
-    --bg: rgba(18, 18, 18, 0.8);
-    --bg-soft: #32302f;
-    --fg: #ebdbb2;
-    --fg-dim: #a89984;
-    --red: #cc241d;
-    --green: #98971a;
-    --yellow: #d79921;
-    --blue: #458588;
-    --purple: #b16286;
-    --aqua: #689d6a;
-    --gray: #928374;
+/* Kanagawa Wave Theme */
+.kanagawa {
+    --bg: rgba(31, 31, 40, 0.9);
+    /* sumiInk1 */
+    --bg-soft: #2a2a37;
+    /* sumiInk2 */
+    --fg: #dcd7ba;
+    /* fujiWhite */
+    --fg-dim: #a6a69c;
+    /* oldWhite */
+
+    --red: #c34043;
+    /* samuraiRed */
+    --green: #76946a;
+    /* autumnGreen */
+    --yellow: #c0a36e;
+    /* carpYellow */
+    --blue: #7e9cd8;
+    /* crystalBlue */
+    --purple: #957fb8;
+    /* oniViolet */
+    --aqua: #6a9589;
+    /* waveAqua1 */
+    --gray: #727169;
+    /* fujiGray */
 }
 
 .terminal-titlebar {
-    background: linear-gradient(#3c3836, #32302f);
+    background: linear-gradient(#2a2a37, #1f1f28);
     height: 36px;
     display: flex;
     align-items: center;
@@ -55,9 +68,11 @@
 .control.close {
     background: var(--red);
 }
+
 .control.minimize {
     background: var(--yellow);
 }
+
 .control.maximize {
     background: var(--green);
 }
@@ -164,4 +179,3 @@
         height: 14px;
     }
 }
-
